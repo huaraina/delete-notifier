@@ -56,15 +56,16 @@ export default ({ settings }: SettingsProps) => {
             </View>
             <FormSection title="Delete Notifier">
                 <FormRow
-                label="Turn off notifications?"
-                >
-                    <FormSwitch value={
-                        settings.getBoolean('notify_on', true)}
-                        onValueChange={(value) => {
-                            settings.set('notify_on', value)
-                        }}
-                    />
-                </FormRow>
+                    label="Turn off notifications?"
+                    trailing={
+                        <FormSwitch
+                            value={settings.getBoolean("notify_on", true)}
+                            onValueChange={(value) => {
+                                settings.set("notify_on", value)
+                            }}
+                        />
+                    }
+                />
             </FormSection>
         </ScrollView>
     )
