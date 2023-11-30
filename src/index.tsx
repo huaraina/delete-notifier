@@ -14,6 +14,7 @@ const DeleteNotifier: Plugin = {
         function notificationTool() {
             //empty for now, gotta figure out stuff
             Dialog.show({title: "turned on :thumbsup:", body: "you did it!", confirmText: "go away now"})
+            
         }
         if (get(pluginName, "notify_on", true))
         {
